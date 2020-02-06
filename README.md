@@ -4,11 +4,12 @@
 
 ## Getting Started
 
-Install this package, [husky](https://github.com/typicode/husky), and
+Install a specific tag of this package,
+[husky](https://github.com/typicode/husky), and
 [lint-staged](https://github.com/okonet/lint-staged) as a dev dependencies:
 
 ```shell
-npm install --save-dev eslint-config husky lint-staged
+npm install --save-dev "bitbucket:actet/eslint-config.git#v1.0.0" husky lint-staged
 ```
 
 Configure husky by adding the following to your `package.json` file:
