@@ -73,7 +73,7 @@ new commit:
   ...
   "extends": [
     ...
-    "eslint-config",
+    "./node_modules/eslint-config",
     ...
   ],
   ...
@@ -150,6 +150,13 @@ configuration this repository provides from within your `node_modules` folder:
 "extends": "node_modules/eslint-config/tsconfig.json",
 ...
 ```
+
+## Configure Pipelines
+
+If your project is using Bitbucket Pipelines, you'll need to add an SSH Key
+to your pipeline as well as a new Access Key to this repository. The combination
+of these two things will enable your pipelines to successfully `npm install`
+this dependency.
 
 ## Testing
 
