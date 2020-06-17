@@ -44,6 +44,7 @@ module.exports = {
     'react-hooks',
     'security',
   ],
+  root: true,
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/explicit-member-accessibility': 'off',
