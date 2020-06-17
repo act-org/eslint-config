@@ -9,7 +9,7 @@ Install a specific tag of this package,
 [lint-staged](https://github.com/okonet/lint-staged) as a dev dependencies:
 
 ```shell
-npm install --save-dev "bitbucket:actet/eslint-config.git#v1.0.0" husky lint-staged
+npm install --save-dev "bitbucket:actet/eslint-config.git#v2.0.0" husky lint-staged
 ```
 
 Configure husky by adding the following to your `package.json` file:
