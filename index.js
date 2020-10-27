@@ -49,6 +49,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
     'comma-dangle': ['error', 'only-multiline'],
     'filenames/match-exported': [
       'error',
@@ -110,6 +111,7 @@ module.exports = {
         allowAfterThis: true,
       },
     ],
+    'no-use-before-define': 'off',
     'prefer-destructuring': [
       'off',
       {
