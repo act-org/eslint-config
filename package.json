@@ -8,36 +8,37 @@
     "Jon Cursi <jon.cursi@act-et.org>"
   ],
   "dependencies": {
-    "@commitlint/cli": "9.0.1",
-    "@commitlint/config-conventional": "9.0.1",
-    "@typescript-eslint/eslint-plugin": "3.6.0",
-    "@typescript-eslint/parser": "3.6.0",
-    "eslint": "7.4.0",
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@typescript-eslint/eslint-plugin": "4.6.0",
+    "@typescript-eslint/parser": "4.6.0",
+    "eslint": "7.12.1",
     "eslint-config-airbnb": "18.2.0",
-    "eslint-config-prettier": "6.11.0",
+    "eslint-config-prettier": "6.14.0",
     "eslint-plugin-disable": "2.0.1",
     "eslint-plugin-filenames": "1.3.2",
     "eslint-plugin-immutable": "1.0.0",
-    "eslint-plugin-import": "2.22.0",
-    "eslint-plugin-jest": "23.18.0",
-    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.1.0",
+    "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-lodash": "7.1.0",
     "eslint-plugin-new-with-error": "2.0.0",
     "eslint-plugin-no-loops": "0.3.0",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.20.3",
-    "eslint-plugin-react-hooks": "4.0.5",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-security": "1.4.0",
-    "markdownlint-cli": "0.23.2",
+    "markdownlint-cli": "0.24.0",
     "npm-run-all": "4.1.5",
-    "prettier": "2.0.5",
-    "typescript": "3.9.6"
+    "prettier": "2.1.2",
+    "typescript": "4.0.5"
   },
   "description": "⚙️ Our preferred configs for CommitLint, ESLint, MarkdownLint, Prettier, and TypeScript.",
   "devDependencies": {
-    "husky": "4.2.5",
-    "lint-staged": "10.2.11"
+    "husky": "4.3.0",
+    "jest": "26.6.1",
+    "lint-staged": "10.5.0"
   },
   "husky": {
     "hooks": {
@@ -73,5 +74,5 @@
     "test:lint:js": "eslint . --ext .js --quiet",
     "test:lint:md": "markdownlint README.md --config markdownlint.config.json"
   },
-  "version": "2.1.0"
+  "version": "2.1.1"
 }
