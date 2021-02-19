@@ -1,8 +1,11 @@
 /**
+ * Copyright (c) ACT, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
  * @prettier
  */
-
-/* eslint-disable immutable/no-mutation */
 
 module.exports = {
   env: {
@@ -31,7 +34,6 @@ module.exports = {
     '@typescript-eslint',
     'disable',
     'filenames',
-    'immutable',
     'import',
     'jest',
     'jsx-a11y',
@@ -58,9 +60,6 @@ module.exports = {
     ],
     'filenames/match-regex': 'off',
     'function-paren-newline': 'off',
-    'immutable/no-let': 'off',
-    'immutable/no-mutation': 'error',
-    'immutable/no-this': 'off',
     'import/extensions': [
       'error',
       'never',

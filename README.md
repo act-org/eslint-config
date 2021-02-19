@@ -1,6 +1,7 @@
 # ESLint Config
 
-⚙️ Our preferred configs for CommitLint, ESLint, MarkdownLint, Prettier, and TypeScript.
+⚙️ ACT's preferred configs for CommitLint, ESLint, MarkdownLint, Prettier, and
+TypeScript.
 
 ## Getting Started
 
@@ -31,12 +32,6 @@ To configure [CommitLint](https://github.com/marionebl/commitlint), create a
 following:
 
 ```js
-/**
- * @prettier
- */
-
-/* eslint-disable */
-
 module.exports = require('eslint-config/commitlint.config');
 ```
 
@@ -111,12 +106,6 @@ To configure [prettier](https://prettier.io/), create a `prettier.config.js`
 file in the root of your project that contains the following:
 
 ```js
-/**
- * @prettier
- */
-
-/* eslint-disable */
-
 module.exports = require('eslint-config/prettier.config');
 ```
 
