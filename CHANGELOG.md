@@ -2,11 +2,16 @@
 
 Chronological history of changes to the ESLint config.
 
+## [v3.2.0] - February 26, 2021
+
+* This package is now open source! Available on NPM at `@actinc/eslint-config`
+* Updated NPM package dependencies to their latest compatible releases
+
 ## [v3.1.0] - February 26, 2021
 
 * No longer specify a [parser](https://prettier.io/docs/en/options.html#parser)
 in the Prettier config
-* Updated NPM package dependencies to the latest releases
+* Updated NPM package dependencies to their latest compatible releases
 
 ## [v3.0.0] - February 19, 2021
 
@@ -14,4 +19,4 @@ in the Prettier config
 * Removed
 [`eslint-plugin-immutable`](https://github.com/jhusain/eslint-plugin-immutable)
 from the ESLint config
-* Updated NPM package dependencies to the latest releases
+* Updated NPM package dependencies to their latest compatible releases
