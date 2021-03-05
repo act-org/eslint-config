@@ -1,6 +1,5 @@
 {
-  "anyBranch": false,
-  "branch": "master",
+  "anyBranch": true,
   "cleanup": true,
   "contents": ".",
   "message": "chore: Bump to v%s",
