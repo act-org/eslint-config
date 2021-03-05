@@ -2,7 +2,7 @@
 
 Chronological history of changes to the ESLint config.
 
-## [v3.2.1] - March 5, 2021
+## [v3.2.3] - March 5, 2021
 
 * This package is now open source! Available on NPM at `@actinc/eslint-config`
 * Updated NPM package dependencies to their latest compatible releases

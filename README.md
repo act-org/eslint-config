@@ -139,10 +139,14 @@ configuration this repository provides from within your `node_modules` folder:
 ...
 ```
 
-## Testing
+## Local Development
 
-To check for infractions in this codebase, run:
+### npm Scripts
 
-```shell
-npm test
-```
+There are several npm scripts at your disposal during local development.
+Here are some of the more important ones:
+
+| Script                  | Description                                                           |
+|:----------------------- |:--------------------------------------------------------------------- |
+| npm test                | Run all tests.                                                        |
+| npm run release         | Publish a new release of the ESLint Config.                           |
