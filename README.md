@@ -1,6 +1,6 @@
 # ESLint Config
 
-⚙️ ACT's preferred configs for TypeScript, Prettier, ESLint, CommitLint, and
+ACT's preferred configs for TypeScript, Prettier, ESLint, CommitLint, and
 MarkdownLint.
 
 ## Getting Started

@@ -2,7 +2,7 @@
   "author": "Jon Cursi <jon.cursi@act-et.org>",
   "bugs": {
     "email": "jon.cursi@act-et.org",
-    "url": "https://bitbucket.org/actet/eslint-config/issues"
+    "url": "https://github.com/act-org/eslint-config/issues"
   },
   "contributors": [
     "Jon Cursi <jon.cursi@act-et.org>"
@@ -46,7 +46,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "homepage": "https://bitbucket.org/actet/eslint-config#readme",
+  "homepage": "https://github.com/act-org/eslint-config#readme",
   "keywords": [
     "commitlint",
     "eslint",
@@ -71,7 +71,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/actet/eslint-config.git"
+    "url": "git+https://github.com/act-org/eslint-config.git"
   },
   "scripts": {
     "release": "np",
