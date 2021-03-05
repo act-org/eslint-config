@@ -5,9 +5,8 @@ MarkdownLint.
 
 ## Getting Started
 
-Install a specific tag of this package,
-[husky](https://github.com/typicode/husky), and
-[lint-staged](https://github.com/okonet/lint-staged) as a dev dependencies:
+Install this package, [husky](https://github.com/typicode/husky), and
+[lint-staged](https://github.com/okonet/lint-staged) as dev dependencies:
 
 ```shell
 npm install --save-dev @actinc/eslint-config husky lint-staged
