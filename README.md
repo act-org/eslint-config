@@ -1,6 +1,6 @@
 # ESLint Config
 
-[![Build Status](https://travis-ci.com/act-org/eslint-config.svg?branch=v4)](https://travis-ci.com/act-org/eslint-config)
+[![Build Status](https://travis-ci.com/act-org/eslint-config.svg?branch=master)](https://travis-ci.com/act-org/eslint-config)
 
 ACT's preferred configs for TypeScript, Prettier, ESLint, CommitLint, and
 MarkdownLint.
