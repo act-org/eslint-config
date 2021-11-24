@@ -2,6 +2,12 @@
 
 Chronological history of changes to the ESLint config.
 
+## [v3.3.0] - November 24, 2021
+
+* Updated `eslint` to `v8.3.0` and other NPM packages to their latest
+compatible releases.
+* Removed deprecated `jsxBracketSameLine` option from `prettier.config.js`
+
 ## [v3.3.0] - March 19, 2021
 
 * Updated `eslint` to `v7.22.0` and other NPM packages to their latest
