@@ -2,7 +2,7 @@
 
 Chronological history of changes to the ESLint config.
 
-## [v3.3.0] - November 24, 2021
+## [v3.4.0] - November 24, 2021
 
 * Updated `eslint` to `v8.3.0` and other NPM packages to their latest
 compatible releases.
