@@ -2,6 +2,12 @@
 
 Chronological history of changes to the ESLint config.
 
+## [v3.4.1] - February 8, 2021
+
+* Upgraded `markdownlint-cli` to `0.31.0` to eliminate some audit warnings.
+* Upgraded `eslint-plugin-promise` to `6.0.0` to be fully compatible with
+ESLint 8+.
+
 ## [v3.4.0] - November 24, 2021
 
 * Updated `eslint` to `v8.3.0` and other NPM packages to their latest
