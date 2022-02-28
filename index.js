@@ -136,6 +136,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react/boolean-prop-naming': 'error',
     'react/destructuring-assignment': ['error', 'always'],
+    'react/function-component-definition': 'off',
     'react/jsx-filename-extension': [
       'warn',
       {
