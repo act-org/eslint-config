@@ -2,6 +2,17 @@
 
 Chronological history of changes to the ESLint config.
 
+## [v3.4.2] - February 28, 2022
+
+* Turned off `react/function-component-definition` rule to allow React function
+components to be defined using `const` and arrow functions.
+
+## [v3.4.1] - February 8, 2022
+
+* Upgraded `markdownlint-cli` to `0.31.0` to eliminate some audit warnings.
+* Upgraded `eslint-plugin-promise` to `6.0.0` to be fully compatible with
+ESLint 8+.
+
 ## [v3.4.0] - November 24, 2021
 
 * Updated `eslint` to `v8.3.0` and other NPM packages to their latest
