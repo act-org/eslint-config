@@ -2,6 +2,11 @@
 
 Chronological history of changes to the ESLint config.
 
+## [v3.5.0] - April 10, 2022
+
+* Updated NPM packages to their latest compatible releases.
+* Opened up dependency versions with `^`. Dev-dependencies remain pinned.
+
 ## [v3.4.2] - February 28, 2022
 
 * Turned off `react/function-component-definition` rule to allow React function
