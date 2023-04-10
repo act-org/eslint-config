@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable line-length -->
 
-[![Version](https://img.shields.io/npm/v/@actinc/eslint-config)](https://www.npmjs.com/package/@actinc/eslint-config) [![Build Status](https://img.shields.io/travis/act-org/eslint-config/master)](https://app.travis-ci.com/github/act-org/eslint-config) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/act-org/eslint-config/blob/master/LICENSE) [![Downloads](https://img.shields.io/npm/dw/@actinc/eslint-config?color=orange)](https://www.npmjs.com/package/@actinc/eslint-config)
+[![Version](https://img.shields.io/npm/v/@actinc/eslint-config)](https://www.npmjs.com/package/@actinc/eslint-config) [![Build Status](https://app.travis-ci.com/act-org/eslint-config.svg?branch=master)](https://app.travis-ci.com/act-org/eslint-config) [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/act-org/eslint-config/blob/master/LICENSE) [![Downloads](https://img.shields.io/npm/dw/@actinc/eslint-config?color=orange)](https://www.npmjs.com/package/@actinc/eslint-config)
 
 <!-- markdownlint-enable line-length -->
 
