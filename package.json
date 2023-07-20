@@ -82,5 +82,5 @@
     "test:lint:md": "markdownlint README.md --config markdownlint.config.json",
     "test:tsconfig": "tsc --project ./tsconfig.json; rm -rf ./tsconfig.tsbuildinfo"
   },
-  "version": "3.5.0"
+  "version": "4.0.0"
 }
