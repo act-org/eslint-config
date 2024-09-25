@@ -1,3 +1,10 @@
+# [4.8.0](https://github.com/act-org/eslint-config/compare/v4.7.0...v4.8.0) (2024-09-25)
+
+
+### Features
+
+* Set tsconfig > compilerOptions.incremental to false by default ([66874c3](https://github.com/act-org/eslint-config/commit/66874c365ec54f4c8aa7afd24e3b2b8bb98f6c91))
+
 # [4.7.0](https://github.com/act-org/eslint-config/compare/v4.6.0...v4.7.0) (2024-09-25)
 
 
