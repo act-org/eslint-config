@@ -3,8 +3,6 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
 module.exports = {
@@ -25,6 +23,14 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:react/recommended',
     'prettier',
+  ],
+  overrides: [
+    {
+      files: ['./**/*.test.tsx'],
+      rules: {
+        'react/react-in-jsx-scope': 'off',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
