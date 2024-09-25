@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/act-org/eslint-config/compare/v4.1.1...v4.2.0) (2024-09-25)
+
+
+### Features
+
+* Added new documentation on release process; test release process ([c74d66c](https://github.com/act-org/eslint-config/commit/c74d66cfbbc01f2ed3b80a498cd78d49a48356ba))
+
 ## [4.1.1](https://github.com/act-org/eslint-config/compare/v4.1.0...v4.1.1) (2024-09-25)
 
 
