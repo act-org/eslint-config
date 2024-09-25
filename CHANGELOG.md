@@ -1,3 +1,10 @@
+# [4.10.0](https://github.com/act-org/eslint-config/compare/v4.9.0...v4.10.0) (2024-09-25)
+
+
+### Features
+
+* Bumped all eslint packages to their latest eslint@8 compatible releases ([c9b61a1](https://github.com/act-org/eslint-config/commit/c9b61a15b50f64d6a10b90d578438c49974514ee))
+
 # [4.9.0](https://github.com/act-org/eslint-config/compare/v4.8.0...v4.9.0) (2024-09-25)
 
 
