@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/act-org/eslint-config/compare/v4.0.0...v4.1.0) (2024-09-25)
+
+
+### Features
+
+* Transition the project to automated releases using semantic-release ([42f7515](https://github.com/act-org/eslint-config/commit/42f7515315bf990acc56fd762f4f70594c9c777f))
+
 # Changelog
 
 Chronological history of changes to the ESLint config.
