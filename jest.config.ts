@@ -13,7 +13,6 @@ const config: JestConfigWithTsJest = {
       'ts-jest',
       {
         diagnostics: false,
-        tsconfig: './configs/tsconfig.json',
       },
     ],
   },

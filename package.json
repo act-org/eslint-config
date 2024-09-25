@@ -90,11 +90,11 @@
     "build:package_json": "clear-package-json package.json -o dist/package.json",
     "prepare": "husky",
     "test": "npm-run-all2 test:**",
-    "test:lint:js": "eslint --config ./configs/index.js --ext .js,.jsx --quiet .",
-    "test:lint:ts": "eslint --config ./configs/index.js --ext .ts,.tsx --quiet .",
+    "test:lint:js": "eslint --ext .js,.jsx --quiet .",
+    "test:lint:ts": "eslint --ext .ts,.tsx --quiet .",
     "test:lint:md": "markdownlint README.md .github/**/*.md --config ./configs/markdownlint.config.json",
-    "test:prettier": "prettier --config ./configs/prettier.config.js --check .",
-    "test:tsconfig": "tsc --project ./configs/tsconfig.json --noEmit",
+    "test:prettier": "prettier --check .",
+    "test:tsconfig": "tsc --noEmit",
     "test:unit": "jest --maxWorkers=2 --silent"
   },
   "version": "4.7.0"
