@@ -38,7 +38,7 @@
     "husky": "8.0.3",
     "jest": "29.6.1",
     "lint-staged": "13.2.3",
-    "np": "7.7.0",
+    "np": "10.0.7",
     "npm-run-all2": "6.2.3"
   },
   "homepage": "https://github.com/act-org/eslint-config#readme",
