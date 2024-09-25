@@ -3,8 +3,11 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- *
- * @prettier
  */
 
-module.exports = require('./index');
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'subject-case': [2, 'always', 'sentence-case'],
+  },
+};
