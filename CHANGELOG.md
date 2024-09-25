@@ -1,3 +1,10 @@
+# [4.3.0](https://github.com/act-org/eslint-config/compare/v4.2.0...v4.3.0) (2024-09-25)
+
+
+### Features
+
+* No longer require pragmas for prettier to work on a file ([f2f7919](https://github.com/act-org/eslint-config/commit/f2f79199d0318b6ee9bea62f26d72b805060a5c9))
+
 # [4.2.0](https://github.com/act-org/eslint-config/compare/v4.1.1...v4.2.0) (2024-09-25)
 
 
