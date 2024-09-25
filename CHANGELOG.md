@@ -1,3 +1,18 @@
+# [4.6.0](https://github.com/act-org/eslint-config/compare/v4.5.0...v4.6.0) (2024-09-25)
+
+
+### Features
+
+* Bump eslint-plugin-jest from 27.9.0 to 28.8.3 ([#15](https://github.com/act-org/eslint-config/issues/15)) ([84692ae](https://github.com/act-org/eslint-config/commit/84692ae9c34a8b4e3895672e6d6537ccb58ee2df))
+
+# [4.5.0](https://github.com/act-org/eslint-config/compare/v4.4.0...v4.5.0) (2024-09-25)
+
+
+### Features
+
+* Do not require react to be in scope for *.test.tsx files ([2297f2c](https://github.com/act-org/eslint-config/commit/2297f2c820aa1eaedb7900e49b8836a7f14fa8fe))
+* Switch default typescript.compilerOptions.jsx to 'react-jsx' ([aa9e5d1](https://github.com/act-org/eslint-config/commit/aa9e5d1c43e213be8614ae36a0ae7708dfb896d0))
+
 # [4.4.0](https://github.com/act-org/eslint-config/compare/v4.3.0...v4.4.0) (2024-09-25)
 
 
