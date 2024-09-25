@@ -1,3 +1,10 @@
+# [4.7.0](https://github.com/act-org/eslint-config/compare/v4.6.0...v4.7.0) (2024-09-25)
+
+
+### Features
+
+* Bump commitlint to v19 ([#12](https://github.com/act-org/eslint-config/issues/12)) ([7b40fbc](https://github.com/act-org/eslint-config/commit/7b40fbc73bd5bcca0fad08e915c7bd0d27a5027b))
+
 # [4.6.0](https://github.com/act-org/eslint-config/compare/v4.5.0...v4.6.0) (2024-09-25)
 
 
