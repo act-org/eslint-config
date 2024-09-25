@@ -1,3 +1,10 @@
+# [4.6.0](https://github.com/act-org/eslint-config/compare/v4.5.0...v4.6.0) (2024-09-25)
+
+
+### Features
+
+* Bump eslint-plugin-jest from 27.9.0 to 28.8.3 ([#15](https://github.com/act-org/eslint-config/issues/15)) ([84692ae](https://github.com/act-org/eslint-config/commit/84692ae9c34a8b4e3895672e6d6537ccb58ee2df))
+
 # [4.5.0](https://github.com/act-org/eslint-config/compare/v4.4.0...v4.5.0) (2024-09-25)
 
 
