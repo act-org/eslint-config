@@ -1,1 +1,1 @@
-./node_modules/.bin/commitlint --config "./commitlint.config.js" --edit $1
+./node_modules/.bin/commitlint --config "./configs/commitlint.config.js" --edit $1
