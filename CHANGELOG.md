@@ -1,3 +1,10 @@
+# [4.9.0](https://github.com/act-org/eslint-config/compare/v4.8.0...v4.9.0) (2024-09-25)
+
+
+### Features
+
+* Upgraded prettier to 3.3.3, as well as associated eslint packages ([8d4fd34](https://github.com/act-org/eslint-config/commit/8d4fd34b6bb9c1556ce232809afd91fed4388a56))
+
 # [4.8.0](https://github.com/act-org/eslint-config/compare/v4.7.0...v4.8.0) (2024-09-25)
 
 
