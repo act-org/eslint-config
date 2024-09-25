@@ -1,3 +1,10 @@
+# [4.4.0](https://github.com/act-org/eslint-config/compare/v4.3.0...v4.4.0) (2024-09-25)
+
+
+### Features
+
+* Bump eslint-plugin-new-with-error from 4.0.0 to 5.0.0 ([#16](https://github.com/act-org/eslint-config/issues/16)) ([5839ffb](https://github.com/act-org/eslint-config/commit/5839ffbbb8bcb4120e54f1e4dba47f8c6ff1d2b9))
+
 # [4.3.0](https://github.com/act-org/eslint-config/compare/v4.2.0...v4.3.0) (2024-09-25)
 
 
