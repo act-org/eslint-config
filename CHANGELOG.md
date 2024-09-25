@@ -1,3 +1,10 @@
+## [4.1.1](https://github.com/act-org/eslint-config/compare/v4.1.0...v4.1.1) (2024-09-25)
+
+
+### Bug Fixes
+
+* Use husky to validate commit messages match format ([57b3ca5](https://github.com/act-org/eslint-config/commit/57b3ca548edb3aa160eee5817513cb56ae1e163d))
+
 # [4.1.0](https://github.com/act-org/eslint-config/compare/v4.0.0...v4.1.0) (2024-09-25)
 
 
