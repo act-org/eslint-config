@@ -35,11 +35,16 @@
   },
   "description": "ACT's preferred configs for TypeScript, Prettier, ESLint, CommitLint, and MarkdownLint.",
   "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/exec": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "clean-publish": "5.0.0",
     "husky": "8.0.3",
     "jest": "29.6.1",
     "lint-staged": "13.2.3",
-    "np": "7.7.0",
-    "npm-run-all2": "6.2.3"
+    "npm-run-all2": "6.2.3",
+    "rimraf": "6.0.1",
+    "semantic-release": "24.1.1"
   },
   "homepage": "https://github.com/act-org/eslint-config#readme",
   "husky": {
@@ -75,12 +80,15 @@
     "url": "git+https://github.com/act-org/eslint-config.git"
   },
   "scripts": {
-    "audit": "npm shrinkwrap && npm audit; rm -rf npm-shrinkwrap.json",
-    "release": "np",
+    "build": "npm-run-all2 build:*",
+    "build:clean": "rimraf dist && mkdir dist",
+    "build:configs": "cp -rf commitlint.config.js index.js markdownlint.config.json prettier.config.js tsconfig.json dist",
+    "build:docs": "cp -rf CHANGELOG.md LICENSE README.md dist",
+    "build:package_json": "clear-package-json package.json -o dist/package.json",
     "test": "npm-run-all2 --parallel test:**",
     "test:lint:js": "eslint . --ext .js --quiet",
     "test:lint:md": "markdownlint README.md --config markdownlint.config.json",
-    "test:tsconfig": "tsc --project ./tsconfig.json; rm -rf ./tsconfig.tsbuildinfo"
+    "test:tsconfig": "tsc"
   },
   "version": "4.0.0"
 }
