@@ -86,6 +86,7 @@
     "prepare": "husky",
     "test": "npm-run-all2 --parallel test:**",
     "test:lint:js": "eslint . --ext .js,.jsx --quiet",
+    "test:lint:ts": "eslint . --ext .ts,.tsx --quiet",
     "test:lint:md": "markdownlint README.md .github/**/*.md --config markdownlint.config.json",
     "test:prettier": "prettier --check .",
     "test:tsconfig": "tsc"
