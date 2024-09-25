@@ -10,10 +10,10 @@
 module.exports = {
   arrowParens: 'avoid',
   bracketSpacing: true,
-  insertPragma: true,
+  insertPragma: false,
   printWidth: 80,
   proseWrap: 'preserve',
-  requirePragma: true,
+  requirePragma: false,
   semi: true,
   singleQuote: true,
   tabWidth: 2,

@@ -152,9 +152,9 @@ configuration this repository provides from within your `node_modules` folder:
 There are several npm scripts at your disposal during local development.
 Here are some of the more important ones:
 
-| Script                  | Description    |
-|:----------------------- |:---------------|
-| npm test                | Run all tests. |
+| Script   | Description    |
+| :------- | :------------- |
+| npm test | Run all tests. |
 
 ### Release Process
 
@@ -164,19 +164,19 @@ a new version for this library and write automated changelog documentation. Thus
 it is important that we accurately capture what type of development we are
 doing via our commit messages.
 
-* For changes to documentation, use the `docs` tag:
+- For changes to documentation, use the `docs` tag:
 
 ```bash
 git commit -m "docs: Updated documentation to clarify XYZ"
 ```
 
-* For patches, use `fix`:
+- For patches, use `fix`:
 
 ```bash
 git commit -m "fix: Updated an eslint rule to fix false positives in downstream projects"
 ```
 
-* For new functionality, use `feat`:
+- For new functionality, use `feat`:
 
 ```bash
 git commit -m "feat: Added new eslint rules around async/await and promises"
