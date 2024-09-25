@@ -1,6 +1,0 @@
-node_modules
-.eslintignore
-.eslintrc.js
-.gitignore
-.np-config.json
-bitbucket-pipelines.yml

@@ -1,10 +1,3 @@
-/**
- * Copyright (c) ACT, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 /* eslint-disable filenames/match-exported */
 
 import { JestConfigWithTsJest } from 'ts-jest';
@@ -20,6 +13,7 @@ const config: JestConfigWithTsJest = {
       'ts-jest',
       {
         diagnostics: false,
+        tsconfig: './configs/tsconfig.json',
       },
     ],
   },
