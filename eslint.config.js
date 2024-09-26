@@ -1,4 +1,4 @@
-import baseConfig from './src/flat.js';
+import baseConfig from './src/index.js';
 
 export default [
   ...baseConfig,

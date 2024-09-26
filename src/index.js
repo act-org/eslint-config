@@ -1,33 +1,36 @@
-import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import disable from 'eslint-plugin-disable';
-// import filenames from 'eslint-plugin-filenames';
-import jest from 'eslint-plugin-jest';
-import jsxA11Y from 'eslint-plugin-jsx-a11y';
-import lodash from 'eslint-plugin-lodash';
-import newWithError from 'eslint-plugin-new-with-error';
-import noLoops from 'eslint-plugin-no-loops';
-// import prettier from 'eslint-plugin-prettier';
-import promise from 'eslint-plugin-promise';
-import react from 'eslint-plugin-react';
-import reactHooks from 'eslint-plugin-react-hooks';
-import security from 'eslint-plugin-security';
 import globals from 'globals';
-import tsParser from '@typescript-eslint/parser';
+import pluginJs from '@eslint/js';
+import pluginTs from '@typescript-eslint/eslint-plugin';
+import pluginReact from 'eslint-plugin-react';
+import pluginJest from 'eslint-plugin-jest';
+import parserTs from '@typescript-eslint/parser';
+import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
+import lodash from 'lodash';
+import pluginPromise from 'eslint-plugin-promise';
+import pluginSecurity from 'eslint-plugin-security';
+import pluginLodash from 'eslint-plugin-lodash';
+import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
+import pluginDisable from 'eslint-plugin-disable';
+// import pluginFilenames from 'eslint-plugin-filenames';
+// import pluginImport from 'eslint-plugin-import';
+import pluginNewWithError from 'eslint-plugin-new-with-error';
+import pluginNoLoops from 'eslint-plugin-no-loops';
+import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import pluginReactHooks from 'eslint-plugin-react-hooks';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
+// import importPlugin from 'eslint-plugin-import';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 const compat = new FlatCompat({
-  allConfig: js.configs.all,
+  allConfig: pluginJs.configs.all,
   baseDirectory: dirname,
-  recommendedConfig: js.configs.recommended,
+  recommendedConfig: pluginJs.configs.recommended,
 });
 
-export default [
+const oldPlugins = [
   ...fixupConfigRules(
     compat.extends(
       // 'airbnb',
@@ -35,44 +38,29 @@ export default [
       // 'plugin:import/errors',
       // 'plugin:import/warnings',
       // 'plugin:import/typescript',
-      'plugin:jest/recommended',
-      'plugin:jsx-a11y/recommended',
       'plugin:lodash/recommended',
-      // 'plugin:prettier/recommended',
-      'plugin:react/recommended',
     ),
   ),
   {
     languageOptions: {
-      ecmaVersion: 2017,
-      globals: {
-        ...globals.browser,
-        ...jest.environments.globals.globals,
-      },
-      parser: tsParser,
+      parser: parserTs,
       sourceType: 'script',
     },
     plugins: {
-      '@typescript-eslint': fixupPluginRules(typescriptEslint),
-      disable,
-      // filenames,
-      jest: fixupPluginRules(jest),
-      'jsx-a11y': fixupPluginRules(jsxA11Y),
-      lodash: fixupPluginRules(lodash),
-      'new-with-error': newWithError,
-      'no-loops': noLoops,
-      //  prettier: fixupPluginRules(prettier),
-      promise,
-      react: fixupPluginRules(react),
-      'react-hooks': fixupPluginRules(reactHooks),
-      security,
+      '@typescript-eslint': fixupPluginRules(pluginTs),
+      disable: pluginDisable,
+      // filenames: pluginFilenames,
+      // import: pluginImport,
+      lodash: fixupPluginRules(pluginLodash),
+      'new-with-error': pluginNewWithError,
+      'no-loops': pluginNoLoops,
+      'react-hooks': fixupPluginRules(pluginReactHooks),
     },
     rules: {
       '@typescript-eslint/explicit-function-return-type': 'error',
       '@typescript-eslint/explicit-member-accessibility': 'off',
       '@typescript-eslint/indent': 'off',
       '@typescript-eslint/no-use-before-define': 'error',
-      'comma-dangle': ['error', 'only-multiline'],
       /*
       'filenames/match-exported': [
         'error',
@@ -83,7 +71,6 @@ export default [
       ],
       'filenames/match-regex': 'off',
       */
-      'function-paren-newline': 'off',
       /*
       'import/extensions': [
         'error',
@@ -117,11 +104,41 @@ export default [
       'import/no-unresolved': 'warn',
       'import/order': 'off',
       */
-      'jsx-a11y/href-no-hash': 'off',
       'lodash/import-scope': 'off',
       'lodash/prefer-lodash-method': 'off',
       'new-with-error/new-with-error': 'error',
       'no-loops/no-loops': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+      'react-hooks/rules-of-hooks': 'error',
+    },
+    settings: {
+      'eslint-plugin-disable': {
+        paths: {
+          '@typescript-eslint': ['*.js', '**/*.js'],
+        },
+      },
+      'import/parsers': {
+        '@typescript-eslint/parser': ['.ts', '.tsx'],
+      },
+      react: {
+        version: 'detect',
+      },
+    },
+  },
+];
+
+export default [
+  {
+    files: ['**/*.{cjs,js,jsx,mjs,ts,tsx}'],
+  },
+  {
+    languageOptions: { globals: globals.browser },
+  },
+  ...oldPlugins,
+  lodash.merge(pluginJs.configs.recommended, {
+    rules: {
+      'comma-dangle': ['error', 'only-multiline'],
+      'function-paren-newline': 'off',
       'no-underscore-dangle': [
         'error',
         {
@@ -149,19 +166,22 @@ export default [
           enforceForRenamedProperties: true,
         },
       ],
-      // 'prettier/prettier': 'error',
-      'promise/always-return': 'error',
-      'promise/avoid-new': 'warn',
-      'promise/catch-or-return': 'error',
-      'promise/no-callback-in-promise': 'warn',
-      'promise/no-nesting': 'warn',
-      'promise/no-promise-in-callback': 'warn',
-      'promise/no-return-wrap': 'error',
-      'promise/param-names': 'error',
-      'promise/prefer-await-to-callbacks': 'warn',
-      'promise/prefer-await-to-then': 'warn',
-      'react-hooks/exhaustive-deps': 'warn',
-      'react-hooks/rules-of-hooks': 'error',
+      'sort-keys': [
+        'error',
+        'asc',
+        {
+          caseSensitive: false,
+        },
+      ],
+    },
+  }),
+  lodash.merge(pluginPrettierRecommended, {
+    rules: {
+      'prettier/prettier': 'error',
+    },
+  }),
+  lodash.merge(pluginReact.configs.flat.recommended, {
+    rules: {
       'react/boolean-prop-naming': 'error',
       'react/destructuring-assignment': ['error', 'always'],
       'react/function-component-definition': 'off',
@@ -219,7 +239,6 @@ export default [
               'componentDidUpdate',
               'componentWillUnmount',
             ],
-
             'static-methods': [
               'displayName',
               'props',
@@ -231,39 +250,44 @@ export default [
               'navigationOptions',
             ],
           },
-
           order: ['static-methods', 'lifecycle', 'everything-else', 'render'],
         },
       ],
       'react/state-in-constructor': 'off',
       'react/static-property-placement': 'off',
+    },
+  }),
+  lodash.merge(pluginJest.configs['flat/recommended'], {
+    files: ['**/*.test.ts', '**/*.test.tsx'],
+  }),
+  lodash.merge(pluginJsxA11y.flatConfigs.recommended, {
+    rules: {
+      'jsx-a11y/href-no-hash': 'off',
+    },
+  }),
+  lodash.merge(pluginPromise.configs['flat/recommended'], {
+    rules: {
+      'promise/always-return': 'error',
+      'promise/avoid-new': 'warn',
+      'promise/catch-or-return': 'error',
+      'promise/no-callback-in-promise': 'warn',
+      'promise/no-nesting': 'warn',
+      'promise/no-promise-in-callback': 'warn',
+      'promise/no-return-wrap': 'error',
+      'promise/param-names': 'error',
+      'promise/prefer-await-to-callbacks': 'warn',
+      'promise/prefer-await-to-then': 'warn',
+    },
+  }),
+  lodash.merge(pluginSecurity.configs.recommended, {
+    rules: {
       'security/detect-non-literal-regexp': 'error',
       'security/detect-non-literal-require': 'error',
       'security/detect-object-injection': 'off',
       'security/detect-possible-timing-attacks': 'error',
       'security/detect-unsafe-regex': 'error',
-      'sort-keys': [
-        'error',
-        'asc',
-        {
-          caseSensitive: false,
-        },
-      ],
     },
-    settings: {
-      'eslint-plugin-disable': {
-        paths: {
-          '@typescript-eslint': ['*.js', '**/*.js'],
-        },
-      },
-      'import/parsers': {
-        '@typescript-eslint/parser': ['.ts', '.tsx'],
-      },
-      react: {
-        version: 'detect',
-      },
-    },
-  },
+  }),
   {
     files: ['**/*.test.tsx'],
     rules: {
