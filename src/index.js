@@ -20,7 +20,6 @@ import pluginReactHooks from 'eslint-plugin-react-hooks';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FlatCompat } from '@eslint/eslintrc';
-// import importPlugin from 'eslint-plugin-import';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
