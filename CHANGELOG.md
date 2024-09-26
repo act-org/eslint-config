@@ -1,3 +1,10 @@
+# [4.15.0](https://github.com/act-org/eslint-config/compare/v4.14.0...v4.15.0) (2024-09-26)
+
+
+### Features
+
+* Remove deprecated max-len rule, as it is conflicting with prettier anyway ([6a91d9f](https://github.com/act-org/eslint-config/commit/6a91d9ff52503a678de2ba9e5c87c2981cb7dd96))
+
 # [4.14.0](https://github.com/act-org/eslint-config/compare/v4.13.0...v4.14.0) (2024-09-26)
 
 
