@@ -61,27 +61,28 @@ commit:
 
 ## Configure ESLint
 
-To configure [ESLint](https://eslint.org/), add the following to your
-`package.json` file. This will allow ESLint to discover the configuration this
-repository provides from within your `node_modules` folder, and will check
-your `*.js`, `*.ts`, and `*.tsx` files for infractions every time you create a
-new commit:
+To configure [ESLint](https://eslint.org/), import our flat config and add it
+to your `eslint.config.js` file:
+
+```js
+import baseConfig from '@actinc/eslint-config';
+
+export default [
+  ...baseConfig,
+  {
+    // Your project customizations go here.
+  },
+];
+```
+
+To check your `.js(x)` and `.ts(x)` files for infractions every time you create
+a new commit, you can add the following to your `package.json` file:
 
 ```json
 ...
-"eslintConfig": {
-  ...
-  "extends": [
-    ...
-    "@actinc/eslint-config",
-    ...
-  ],
-  ...
-},
-...
 "lint-staged": {
   ...
-  "*.{js,ts,tsx}": "eslint",
+  "*.{js,jsx,ts,tsx}": "npx eslint",
   ...
 },
 ...
