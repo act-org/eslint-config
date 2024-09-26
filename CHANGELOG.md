@@ -1,3 +1,10 @@
+## [4.12.1](https://github.com/act-org/eslint-config/compare/v4.12.0...v4.12.1) (2024-09-26)
+
+
+### Bug Fixes
+
+* Open up semver ranges ([435f13e](https://github.com/act-org/eslint-config/commit/435f13e61d183504d6186f363a42a46da05c7388))
+
 # [4.12.0](https://github.com/act-org/eslint-config/compare/v4.11.0...v4.12.0) (2024-09-26)
 
 
