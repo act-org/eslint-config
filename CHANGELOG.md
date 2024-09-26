@@ -1,3 +1,10 @@
+# [4.11.0](https://github.com/act-org/eslint-config/compare/v4.10.0...v4.11.0) (2024-09-26)
+
+
+### Features
+
+* Added eslint-import-resolver-typescript to the core config ([8ffdf0a](https://github.com/act-org/eslint-config/commit/8ffdf0af3c65a71524c7d654987fd1837e828dac))
+
 # [4.10.0](https://github.com/act-org/eslint-config/compare/v4.9.0...v4.10.0) (2024-09-25)
 
 
