@@ -20,8 +20,10 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:lodash/recommended',
+    'plugin:mdx/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
+    'plugin:storybook/recommended',
     'prettier',
   ],
   overrides: [
@@ -29,6 +31,13 @@ module.exports = {
       files: ['./**/*.test.tsx'],
       rules: {
         'react/react-in-jsx-scope': 'off',
+      },
+    },
+    {
+      files: ['./**/*.stories.tsx'],
+      rules: {
+        'react-hooks/rules-of-hooks': 'off',
+        'storybook/story-exports': 'off',
       },
     },
   ],
@@ -57,6 +66,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-use-before-define': 'error',
     'comma-dangle': ['error', 'only-multiline'],
     'filenames/match-exported': [
@@ -94,7 +104,38 @@ module.exports = {
     ],
     'import/no-named-as-default': 'off',
     'import/no-unresolved': 'warn',
-    'import/order': 'off',
+    'import/order': [
+      'warn',
+      {
+        alphabetize: { caseInsensitive: true, order: 'asc' },
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+          'type',
+        ],
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            group: 'internal',
+            pattern: '~/**',
+          },
+          {
+            group: 'external',
+            pattern: '@**',
+          },
+          {
+            group: 'external',
+            pattern: 'next/**',
+          },
+        ],
+        warnOnUnassignedImports: true,
+      },
+    ],
     'jsx-a11y/href-no-hash': 'off',
     'lodash/import-scope': 'off',
     'lodash/prefer-lodash-method': 'off',
@@ -140,7 +181,7 @@ module.exports = {
     'promise/prefer-await-to-then': 'warn',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
-    'react/boolean-prop-naming': 'error',
+    'react/boolean-prop-naming': 'warn',
     'react/destructuring-assignment': ['error', 'always'],
     'react/function-component-definition': 'off',
     'react/jsx-filename-extension': [
@@ -173,6 +214,7 @@ module.exports = {
     'react/no-unused-state': 'error',
     'react/prefer-stateless-function': 'error',
     'react/react-in-jsx-scope': 'error',
+    'react/require-default-props': 'off',
     'react/require-render-return': 'error',
     'react/sort-comp': [
       'error',
@@ -236,6 +278,8 @@ module.exports = {
       },
       typescript: {},
     },
+    'mdx/code-blocks': true,
+    'mdx/language-mapper': {},
     react: {
       version: 'detect',
     },
