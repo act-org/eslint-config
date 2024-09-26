@@ -1,3 +1,10 @@
+# [4.16.0](https://github.com/act-org/eslint-config/compare/v4.15.0...v4.16.0) (2024-09-26)
+
+
+### Features
+
+* Add a nest configuration for linting BE development projects ([807197e](https://github.com/act-org/eslint-config/commit/807197ea18836f6f1a251cb9a26ba7005065f3a1))
+
 # [4.15.0](https://github.com/act-org/eslint-config/compare/v4.14.0...v4.15.0) (2024-09-26)
 
 
