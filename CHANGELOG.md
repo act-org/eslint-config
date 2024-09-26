@@ -1,3 +1,10 @@
+# [4.12.0](https://github.com/act-org/eslint-config/compare/v4.11.0...v4.12.0) (2024-09-26)
+
+
+### Features
+
+* Added eslint-import-resolver-node to the core setup ([41b7478](https://github.com/act-org/eslint-config/commit/41b74782f2486610baa306341bac8b8c6e173a8c))
+
 # [4.11.0](https://github.com/act-org/eslint-config/compare/v4.10.0...v4.11.0) (2024-09-26)
 
 
