@@ -31,6 +31,7 @@
     "eslint-plugin-react-hooks": "5.1.0-rc-778e1ed2-20240926",
     "eslint-plugin-security": "^3.0.1",
     "globals": "^15.9.0",
+    "lodash": "^4.17.21",
     "markdownlint-cli": "^0.42.0",
     "prettier": "^3.3.3"
   },
@@ -41,7 +42,9 @@
     "@semantic-release/git": "10.0.1",
     "@testing-library/jest-dom": "6.5.0",
     "@testing-library/react": "16.0.1",
+    "@types/eslint__js": "8.42.3",
     "@types/jest": "29.5.13",
+    "@types/lodash": "4.17.9",
     "@types/react": "18.3.9",
     "@types/react-dom": "18.3.0",
     "clean-publish": "5.0.0",
