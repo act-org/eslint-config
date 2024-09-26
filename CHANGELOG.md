@@ -1,3 +1,10 @@
+# [4.14.0](https://github.com/act-org/eslint-config/compare/v4.13.0...v4.14.0) (2024-09-26)
+
+
+### Features
+
+* Added support for next, regex, sort-keys-fix plugins ([3a2afbd](https://github.com/act-org/eslint-config/commit/3a2afbd6d68f0ebbb98850e40d29cff403678b06))
+
 # [4.13.0](https://github.com/act-org/eslint-config/compare/v4.12.1...v4.13.0) (2024-09-26)
 
 
