@@ -1,3 +1,10 @@
+# [4.13.0](https://github.com/act-org/eslint-config/compare/v4.12.1...v4.13.0) (2024-09-26)
+
+
+### Features
+
+* Added rules for mdx and storybook files ([b09fff4](https://github.com/act-org/eslint-config/commit/b09fff4944b542debe682ee511a5cb46bba0659c))
+
 ## [4.12.1](https://github.com/act-org/eslint-config/compare/v4.12.0...v4.12.1) (2024-09-26)
 
 
